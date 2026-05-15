@@ -114,7 +114,7 @@ function DetectionRow({ i: Icon, t, desc, v, ok }: { i: typeof Bug; t: string; d
   );
 }
 
-function DetectionCard({ i: Icon, t, desc, v }: { i: typeof Bug; t: string; desc: string; v: string; ok: boolean }) {
+function DetectionCard({ i: Icon, t, desc, v }: { i: typeof Bug; t: string; desc: string; v: string; ok?: boolean }) {
   return (
     <Card className="h-full border-border/60 bg-card/60 p-5 backdrop-blur">
       <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-brand text-primary-foreground shadow-glow"><Icon className="h-5 w-5" /></span>
